@@ -1,0 +1,17 @@
+PODS:
+  - Aspects (1.4.1)
+  - UICollectionViewInteractiveMovement (0.1.0):
+    - Aspects
+
+DEPENDENCIES:
+  - UICollectionViewInteractiveMovement (from `../`)
+
+EXTERNAL SOURCES:
+  UICollectionViewInteractiveMovement:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  UICollectionViewInteractiveMovement: 046fa5a6ee1faa84135ca55d5bd6e47a3ce46261
+
+COCOAPODS: 0.39.0.beta.4
