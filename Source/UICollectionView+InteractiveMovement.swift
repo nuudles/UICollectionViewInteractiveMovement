@@ -191,7 +191,6 @@ extension UICollectionView
 			if targetIndexPath != previousTargetIndexPath
 			{
 				self.moveItemAtIndexPath(previousTargetIndexPath, toIndexPath: targetIndexPath)
-//				NSLog("Move \(previousTargetIndexPath) to \(targetIndexPath)")
 			}
 			dictionary[previousTargetIndexPath] = targetIndexPath
 			item.targetIndexPath = targetIndexPath
@@ -201,7 +200,6 @@ extension UICollectionView
 		let targetIndexPaths = dictionary.values.elements.map({ $0 }) as [NSIndexPath]
 		let invalidationContext = collectionViewLayout.backportInvalidationContextForInteractivelyMovingItems(targetIndexPaths, withTargetPosition: targetPosition, previousIndexPaths: previousTargetIndexPaths, previousPosition: previousPosition)
 		collectionViewLayout.invalidateLayoutWithContext(invalidationContext)
-//		NSLog("\(invalidationContext.invalidatedItemIndexPaths)")
 	}
 
 	// MARK: - UIGestureRecognizer callback methods
