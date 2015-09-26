@@ -24,6 +24,7 @@
 {
 	CFTypeRef result = CFBridgingRetain(returnValue);
 	[self setReturnValue:&result];
+	CFAutorelease(result);
 }
 
 @end
